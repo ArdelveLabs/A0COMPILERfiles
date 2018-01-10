@@ -1,0 +1,162 @@
+//Ardelve Labs Confidential
+//Ardelve BIO Data Generator - Rev0p1
+//VIS015cellIREFERENCE Bio Generator
+
+//Cell Parameters
+cell,VIS015cellREFERENCE
+instance,USER
+name,USER
+REF,USER
+accuracy,USER
+area,AREA
+
+//Cell Area Estimators
+sub_area,ARD00referenceRAW1,10000
+sub_area,ARD00referenceRAW2,5000
+sub_area,ARD00referenceCCP,8000
+sub_area,ARD00referenceCCN,7000
+
+//Cell Pin BIO's
+pinname,V
+definition,V,cell power
+vq,V,NETLIST
+absmax,V,6.5
+absmin,V,-0.3
+io,V,input
+mode,V,power
+esd,V,power rail
+iqon,V,15
+iqoff,V,0
+
+pinname,G
+definition,G,cell power ground
+vq,G,NETLIST
+absmax,G,0.3
+absmin,G,-0.3
+io,G,input
+mode,G,power
+esd,G,power rail
+iq_on,G,12
+iq_off,G,0
+
+pinname,Gs
+definition,Gs,REFERENCE ground sense
+vq,Gs,NETLIST
+absmax,Gs,0.3
+absmin,Gs,-0.3
+io,Gs,input
+mode,Gs,analogue
+esd,Gs,600K to VBG
+iqon,G,3
+iqoff,G,0
+
+pinname,REF
+definition,REF,Reference Output voltage
+vq,REF,NETLIST
+absmax,REF,6.5
+absmin,REF,-0.3
+io,REF,output
+mode,REF,analog
+esd,REF,ARD00amux2 
+iqon,REF,0
+iqoff,REF,0
+
+pinname,IP
+definition,IP,Input Bias current 
+vq,IP,NETLIST
+absmax,IP,6.5
+absmin,IP,-0.3
+io,IP,input
+mode,IP,analog
+esd,IP,nch6i 2/0.7/1 drain
+iqon,IP,0.5
+iqoff,IP,0
+
+pinname,trimREF<4:0>
+definition,trimREF<4:0>,trim Input:Trim REF output
+vq,trimREF<4:0>,NETLIST
+absmax,trimREF<4:0>,6.5
+absmin,trimREF<4:0>,-0.3
+io,trimREF<4:0>,input
+mode,trimREF<4:0>,digital
+esd,trimREF<4:0>,nch6i 10/0.7/1 gate
+iqon,trimib<4:0>,0
+iqoff,trimib<4:0>,0
+
+pinname,trimBG<6:0>
+definition,trimBG<6:0>,trim Input:Trim BG output
+vq,trimBG<6:0>,NETLIST
+absmax,trimBG<6:0>,6.5
+absmin,trimBG<6:0>,-0.3
+io,trimBG<6:0>,input
+mode,trimBG<6:0>,digital
+esd,trimBG<6:0>,nch6i 10/0.7/1 gate
+iqon,trimBG<6:0>,0
+iqoff,trimBG<6:0>,0
+
+pinname,ten_bg
+definition,ten_bg,Testmode Input:Enable Measure VBG
+vq,ten_bg,NETLIST
+absmax,ten_bg,6.5
+absmin,ten_bg,-0.3
+io,ten_bg,input
+mode,ten_bg,digital
+esd,ten_bg,ARD00tswG input
+iqon,ten_bg,0
+iqoff,ten_bg,0
+
+pinname,ten_ref
+definition,ten_ref,Testmode Input:Enable Measure REF`
+vq,ten_ref,NETLIST
+absmax,ten_ref,6.5
+absmin,ten_ref,-0.3
+io,ten_ref,input
+mode,ten_ref,digital
+esd,ten_ref,ARD00tswG input
+iqon,ten_ref,0
+iqoff,ten_ref,0
+
+pinname,VBG
+definition,VBG,VBG output Voltage
+vq,VBG,DESIGN
+absmax,VBG,6.5
+absmin,VBG,-0.3
+io,VBG,output
+mode,VBG,analog
+esd,VBG,nch6i 10/0.7/1/4 source
+iqon,VBG,0
+iqoff,VBG,0
+
+pinname,refok
+definition,refok,reference ok flag
+vq,refok,NETLIST
+absmax,refok,6.5
+absmin,refok,-0.3
+io,refok,output
+mode,refok,digital
+esd,refok,inv4 output
+iqon,refok,0
+iqoff,refok,0
+
+pinname,TAO_BG
+definition,TAO_BG,Testmode Output:Measure VBG
+vq,TAO_BG,NETLIST
+absmax,TAO_BG,6.5
+absmin,TAO_BG,-0.3
+io,TAO_BG,output
+mode,TAO_BG,analogue
+esd,TAO_BG,ARD00tswG output
+iqon,TAO_BG,0
+iqoff,TAO_BG,0
+
+pinname,TAO_REF
+definition,TAO_REF,Testmode Output:Measure REFERENCE
+vq,TAO_REF,NETLIST
+absmax,TAO_REF,6.5
+absmin,TAO_REF,-0.3
+io,TAO_REF,output
+mode,TAO_REF,analogue
+esd,TAO_REF,ARD00tswG output
+iqon,TAO_REF,0
+iqoff,TAO_REF,0
+endbio

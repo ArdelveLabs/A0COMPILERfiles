@@ -1,0 +1,6 @@
+VIS015,/./Ardelve//ArdelveDesignConfiguration/VIS015//VIS015constraints.txt
+ApproveList,/./Ardelve//ArdelveDesignConfiguration//VIS015//ARDELVEapprovedList.txt
+CELLpath,/./Ardelve//ArdelveDesignConfiguration//CELLbio//
+STANDARDpath,/./Ardelve//ArdelveDesignConfiguration//STANDARDbio//
+SYMBOLpinlist,/./Ardelve//ArdelveVerilog
+ProjectDirectory,/./Ardelve//ArdelveNEWproject//

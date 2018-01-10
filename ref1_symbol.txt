@@ -1,0 +1,17 @@
+module ref1 (REF,TAO_BG,TAO_REF,VBG,refok,G,Gs,IP,V,en,ten_bg,ten_ref,trimBG,trimREF);
+input V;
+input [4:0] trimREF;
+input G;
+input en;
+input [6:0] trimBG;
+input ten_ref;
+input ten_bg;
+input IP;
+input Gs;
+output TAO_REF;
+output REF;
+output VBG;
+output TAO_BG;
+output refok;
+endmodule
+

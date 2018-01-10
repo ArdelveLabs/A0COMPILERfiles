@@ -1,0 +1,10 @@
+
+//Ardelve Labs Confidential
+//VIS 015 Design Constraints Rev0p1
+
+//VOLTAGE References
+vbg,1.221
+ref,0.8
+
+//Area Estimators
+AREA_RESISTOR,0.6

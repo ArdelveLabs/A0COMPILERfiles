@@ -1,0 +1,21 @@
+//Ardelve Labs Confidential
+//Ardelve Approved IP List
+
+//Standard Library
+//cell,VIS015standardRESISTOR
+//cell,VIS015standardPIN,
+//cell,VIS015standardCOMP
+
+
+
+//IP Library
+cell,VIS015cellREFERENCE
+cell,VIS015cellIBIAS
+//cell,VIS015cellUVLO
+//cell,VIS015cellOSCILLATOR
+//cell,VIS015cellDELAY
+//cell,VIS015cellTHERMAL,
+/cell,VIS015cellTIMER,
+//cell,VIS015cellDRIVERN
+//cell,VIS015cellDRIVERP
+
